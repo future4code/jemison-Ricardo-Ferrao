@@ -51,15 +51,18 @@ alert(`Voce recebe ${salarioPorDia/horasPorDia} por hora`)
 //console.log("Olá ", "Seu nome é ", nome, "voce tem ", idade, "anos")
 
 //EXERCICIO 2
-/*
-let respostaUm = true
-let respostaDois = true
-let respostaTres = true
 
- respostaUm = prompt("Voce tem carro?")
- respostaDois = prompt("Voce esta comendo milho?")
- respostaTres = prompt("Voce sabe voar?")
+/*
+let respostaUm = true;
+let respostaDois = false;
+let respostaTres = true;
+
+
+console.log("Voce tem carro -->", respostaUm);
+console.log("Voce esta comendo milho? -->", respostaDois);
+console.log("Voce sabe voar? -->", respostaTres);
 */
+
 
 //EXERCICIO 3
 /*
