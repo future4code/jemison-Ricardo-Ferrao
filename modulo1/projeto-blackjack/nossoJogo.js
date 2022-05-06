@@ -11,7 +11,7 @@
  * 
  */
 
-
+/*
 console.log("Boas vindas ao jogo de Blackjack!")
 returnRodada()
 function rodadaBlackjack() {
@@ -62,3 +62,4 @@ function returnRodada () {
    }
    console.log("O JOGO ACABOU!!!!!")
 }
+*/
