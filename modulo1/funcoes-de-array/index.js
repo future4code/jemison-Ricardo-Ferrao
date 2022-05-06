@@ -145,13 +145,13 @@ const achaYpe = produtos.filter((produto) => {
 //e) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". 
 //Esse array deve conter frases apenas dos itens cujo nome contenha a palavra 
 //"Ypê"
-/*
-const fraseYpe = achaYpe.map((produto, preco) => {
-    return ("Compre" produto "por" preco)
+
+const fraseYpe = achaYpe.map((produto) => {
+    return (`Compre ${produto.nome} por ${produto.preco}`)
 })
 
 console.log(fraseYpe)
-*/
+
 
 
 //DESAFIO
