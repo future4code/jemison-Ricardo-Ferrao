@@ -97,7 +97,18 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-
+    let segundoMaior = [array[0]];
+    let resultado = [];
+    array.sort(function(a, b) {
+        return a - b;
+    });
+    for (var i = 1; i < array.length; i++) {
+        if (array[i - 1] < array[i]) {
+            segundoMaior.push(array[i]);
+        }
+    }
+    resultado.push(segundoMaior[segundoMaior.length - 2], segundoMaior[1]);
+    return resultado
 
 }
 
@@ -149,7 +160,15 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+    for (let i=0; i<contas.length; i++){
+        let somaGastos = 0    
+        for (gastos of contas[i].compras){
+          somaGastos += gastos
+        }
+        contas[i].saldoTotal = contas[i].saldoTotal - somaGastos
+        console.log(contas[i].saldoTotal)
+      }
+      return contas
 }
 
 // EXERCÍCIO 15A
