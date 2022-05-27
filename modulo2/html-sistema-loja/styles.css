@@ -1,0 +1,52 @@
+h1{
+    color:green;
+}
+
+a{
+    color:blue;
+    background-color: rgb(229, 255, 0);
+}
+
+h2{
+    text-align: center;
+    color:rgb(201, 5, 5);
+}
+
+th{
+    color:white;
+    background-color:chocolate 
+}
+
+button{
+    margin-inline: auto;
+    margin-top:40px ;
+    padding: 40px;
+    display: block;
+    background-color:brown;
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+footer{
+
+    text-align: center;
+
+}
+
+body{
+    text-align: center;
+}
+
+p{
+    color:brown;
+}
+tr{
+    background-color: cornflowerblue;
+}
+
+table{
+    margin-inline: auto;
+}
+
+
+
