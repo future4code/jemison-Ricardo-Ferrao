@@ -1,9 +1,4 @@
-/*
-*{
-    margin: 0;
-    padding: 0;
-}
-*/
+
 .cabecalho{
     text-align: center;
     background-color:cornflowerblue;
@@ -13,18 +8,6 @@
     font-size:xx-large;
 }
 
-/*
-.menu{
-    color:white;
-    text-align: center;
-    background-color:cornflowerblue;
-    
-}
-
-a{
-    color:white;
-}
-*/
 
 
 #menu-h{
@@ -32,7 +15,7 @@ a{
 }
 
 #menu-h ul {
-    /*max-width: 800px;*/
+ 
     list-style: none;
     padding: 0;
 }
