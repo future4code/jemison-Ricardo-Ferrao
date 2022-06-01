@@ -1,9 +1,15 @@
+function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+  // Escreva seu código aqui
   let contador=0
-  for(let i of arrayDeNumeros[]){
+  for(i=0; i < arrayDeNumeros.length; i++){
     if(arrayDeNumeros[i] === numeroEscolhido){
-      contador = contador+1
-      }console.log(`O número ${numeroEscolhido} aparece ${contador}x`)
-    else{
-      console.log("Número não encontrado")
+      contador++
     }
+  }
+      if(contador > 0){
+        return `O número ${numeroEscolhido} aparece ${contador}x`
+      }else{
+        return "Número não encontrado"
+    }
+    
   }
