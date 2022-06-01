@@ -1,0 +1,85 @@
+
+.cabecalho{
+    text-align: center;
+    background-color:cornflowerblue;
+}
+
+#nome{
+    font-size:xx-large;
+}
+
+
+
+#menu-h{
+    background-color:cornflowerblue;
+}
+
+#menu-h ul {
+ 
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color:rgb(97, 97, 97);
+}
+
+
+
+h3{
+    text-align: center;
+
+}
+
+.texto-descritivo{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+oi{
+    text-align: center;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+main{
+    text-align: center;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main li{
+    list-style: none;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background-color:cornflowerblue;
+    
+}
+.imagem{
+    text-align:center;
+
+}
