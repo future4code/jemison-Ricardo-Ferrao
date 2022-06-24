@@ -1,0 +1,7 @@
+1 - Ler com muita atenção o texto com o problema solicitado
+2 - Retirar as informações necessárias para a resolução do problema
+3 - Pensar em quais serão as entradas e as saidas
+4 - Fazer o esquema grafico do problema
+5 - Criar o código principal
+6 - Testar o funcionamento
+7 - Verificar ondo se pode melhorar o código
