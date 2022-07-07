@@ -1,3 +1,3 @@
 SURGE
 
-creepy-stomach.surge.sh
+rustic-holiday.surge.sh
