@@ -1,0 +1,8 @@
+export const produtos=[
+    {id:1, nome:"Lista Terminal", valor:"345", imagem:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbQekKcoRZh3KMG4BF7jQiRCGHBPN2Rlzw9CytTgpFe7CaOd8Ne3He1yNsAMJT1HSfX_vM_Cs2x9baGTCah3ci6VfGb6L5vWgkWe-ZMSdbZueEOqwVxlkfD1qAWY42sCVYG_Acwwmxg2Du7KETRVM6IivZF5XfoMyJHnl7rDJcOu45l5e-9MRIId_ToQ/s2000/JIJIJ.jpg", status:false},
+    {id:2, nome:"Obi-wan Kenobi", valor:"580", imagem:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq5TnzhG-i1oTOX6bt7oZdHETubYEjj7OeKzRtJ-plrCrN0dCWtEWu9Rkvy3luIXOeejhkQqjj8pb5GRmLN2iz9vzZXX5a6WkxHYOKXBHs_STUoM-5f2VEmDweKzx_nGdcS0jwqbUJMXZiIPE9Q4irv6cN5FgRBwIi3zrOLjHySBcGutSWO1PY2dcSWQ/s800/646464H.jpg", status:false},
+    {id:3, nome:"MsMarvel", valor:"567", imagem:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFvgVcyzIOs2K3LLtzAK2l-yi10WgVUhsF-4qw9X4es8LTV_P5nD-R-SLW6ovqgz46xR3SZa9wZFz_nrQ4hbtNt6jwJAoASMpyPNdvkY7EXfOlcqa4OSq8zTmctoIeuzYvdsnJXjZ--plOAPOEwcqCn0AcqcV0-8DNThEc_zBBXzhBYGnorcedlUPxjg/s900/0897tf.jpg", status:false},
+    {id:4, nome:"Only Murders in the Building", valor:"994", imagem:"https://1.bp.blogspot.com/-WojTEpeztWI/YTihSTI4q0I/AAAAAAAAZGw/WnkF_aa6JZQ7VdGH4Hg4qVwh3s9vEyuGwCLcBGAsYHQ/s755/_building.jpg", status:false},
+    {id:5, nome:"Walker", valor:"102", imagem:"https://1.bp.blogspot.com/-RGBSfNG3v44/YYf-JNgv-YI/AAAAAAAAZbY/MJvqldWmn8sesBT_jUBm7lzH1UiPlmH_gCLcBGAsYHQ/s755/HUHUH.jpg", status:false},
+    {id:6, nome:"Westworld", valor:"784", imagem:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBfvNTF-KixA0Ez4CXzNay7G3N6cvgxNJiiRkc71IL1d4G7oFe9kfZL__Ss4nPQj1BwmhGTJV_2qOH5QhCEunI6XwhtfSonDU73UkvP7VDBFxkkVpcJjD1acbyeg8aMgeHhNUbTUa-iLEWI84mvdC_VMG6IEvRCwiakriWZfAFf_Wn8vgoPekPLULEBw/s755/AFAFAFAFAF.jpg", status:false},
+]
