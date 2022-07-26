@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import FormNovaTarefa from './components/FormNovaTarefa';
+import ListaDeTarefas from './components/ListaDeTarefas';
+import { DivPai, HeaderApp } from './Style';
+import {tarefas} from "./mockpDados"
+import { useState } from 'react';
 
 function App() {
+  const [tarefasAtuais,setTarefasAtuais]=useState(tarefas)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <DivPai>
+      <HeaderApp/>
+      <FormNovaTarefa myTarefas={tarefasAtuais} mudaTarefasAtuais={setTarefasAtuais}/>
+      <ListaDeTarefas myTarefas={tarefasAtuais}/>
+    </DivPai>
+
+    );
 }
 
 export default App;
