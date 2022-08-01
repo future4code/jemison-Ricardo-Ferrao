@@ -133,7 +133,7 @@ let cineLanche = prompt("Qual o lanche vais comprar?")
         console.log("Escolha outro filme!!!!!")
     }
 */
-
+/*
 //2
 
 let nomeUsuario = prompt("Informe o seu nome:")
@@ -153,6 +153,12 @@ let ingressos = prompt("Queres quants ingressos?")
 
 console.log(nomeUsuario, tipoJogo, etapaJogo, ingressos)
 
+*/
+
+
+const x=2
+const y=3
+console.log((x+y/4)==0) || ((9/y*2)==1)
 
 
 
