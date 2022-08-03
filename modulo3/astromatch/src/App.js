@@ -1,9 +1,7 @@
 
 import { GlobalStyle } from "./GlobalStyled";
-//import Card from "./Components/Card/Card";
-//import { Header } from "./Components/Header/Header";
-//import { DetailsPage } from "./Pages/DetailsPage";
-import { Homepage } from "./Pages/Homepage";
+import { Homepage } from "./Pages/Homepage/Homepage";
+import { results } from "./data/data" 
 
 
 
@@ -11,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Homepage />
+      <Homepage results={results}/>
       {/*<DetailsPage /> */}
 
     </div>

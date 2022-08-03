@@ -1,12 +1,13 @@
 
 
-import { HeaderContainer } from './styles';
+import { HeaderContainer } from "./styles";
 
 
-export function Header () {
+function Header () {
     return (
         <HeaderContainer>
-            <h1> Header </h1>
+            <h1> Caras e Bocas </h1>
         </HeaderContainer>
     )
 }
+export default Header;
