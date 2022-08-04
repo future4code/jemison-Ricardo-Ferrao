@@ -1,4 +1,3 @@
-//import { useState } from "react";
 import Card from "../../Components/Card/Card";
 import Header from "../../Components/Header/Header";
 import { HomePageContainer } from "./styles";
@@ -12,16 +11,8 @@ export function Homepage (props) {
     const {handleInputImage, handleInputName, handleInputSpecies, handleInputQuery, handleInputOrderParam} =props.handlers
     const {addCharacter } = props
     const {removeCharacter} = props
+    const {changePage} = props
 
-
-
-    //Estados para salvar os inputs
-    //Estados transferidos para o App.js
-    /*
-    const [image, setImage] = useState("")
-    const [name, setName] = useState("")
-    const [species, setSpecies] = useState("")
-    */
 
     //RENDERIZANDO A LISTA
     const renderList = characters
@@ -40,19 +31,11 @@ export function Homepage (props) {
             name={char.name}
             species={char.species}
             removeCharacter={removeCharacter}
+            changePage={changePage}
 
             />
         )
     })
-
-    //Funções para captar os inputs/
-    //Funções transferidas para o App.js
-    /*
-    const handleInputImage = (event) => setImage(event.target.value)
-    const handleInputName = (event) => setName(event.target.value)
-    const handleInputSpecies = (event) => setSpecies(event.target.value)
-    */
-
 
     return (
         <>
@@ -63,6 +46,7 @@ export function Homepage (props) {
             <aside>
                 {/*Criamos os formulários e inputs*/}
                 <form>
+                    <h2>Criar Personagem</h2>
                     <label htmlFor="image">Imagem:</label>
                     <input 
                     type="text" 
