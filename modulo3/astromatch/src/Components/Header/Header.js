@@ -1,13 +1,9 @@
-
-
 import { HeaderContainer } from "./styles";
 
-
-function Header () {
+export function Header () {
     return (
         <HeaderContainer>
-            <h1> Caras e Bocas </h1>
+            <h1>Astro MATCH</h1>
         </HeaderContainer>
     )
 }
-export default Header;
