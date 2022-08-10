@@ -1,8 +1,27 @@
+import React from "react";
+import {useNavigate} from 'react-router-dom'
+
+
 export function LoginPage() {
+    const navigate = useNavigate()
+
+    const goToHome = () => {
+      navigate("/")
+    }
+    const goToAdmin=() =>{
+      navigate("/Admin")
+    }
+   
+
     return (
-      <div>
-        <h1>PROJETO LABEX - LoginPage</h1> 
-      </div>
+      <section>
+        <h1>PROJETO LABEX - LOGIN</h1> 
+        <button onClick={goToHome}>Página inicial</button>
+        <button onClick={goToAdmin}>Administração</button>
+
+      </section>
+      
+      
     );
   }
-export default LoginPage
+
