@@ -14,7 +14,7 @@ export function TripDetailsPage() {
 
     return (
       <section>
-        <h1>FORMULÁRIO DE VIAGEM</h1> 
+        <h1>DETALHES DA VIAGEM</h1> 
         {/*<button onClick={goToHome}>Página inicial</button>*/}
         <button onClick={goToLastPage}>Retorne a página anterior</button>
       </section>
