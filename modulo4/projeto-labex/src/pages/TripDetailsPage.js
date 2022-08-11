@@ -5,17 +5,13 @@ export function TripDetailsPage() {
     
   const navigate = useNavigate()
 
-/*  const goToHome = () => {
-    navigate("/")
-  }*/
   const goToLastPage = () => {
     navigate(-1)
   }
 
     return (
       <section>
-        <h1>DETALHES DA VIAGEM</h1> 
-        {/*<button onClick={goToHome}>Página inicial</button>*/}
+        <h1>Ver viagem  e candidatos</h1> 
         <button onClick={goToLastPage}>Retorne a página anterior</button>
       </section>
     );

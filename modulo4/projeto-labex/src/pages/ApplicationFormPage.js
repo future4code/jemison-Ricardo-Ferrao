@@ -5,19 +5,14 @@ export function ApplicationFormPage() {
     
   const navigate = useNavigate()
 
-/*  const goToHome = () => {
-    navigate("/")
-  }*/
   const goToLastPage = () => {
     navigate(-1)
   }
 
     return (
       <section>
-        <h1>FORMULÁRIO DE VIAGEM</h1>
-
-        {/*<button onClick={goToHome}>Página inicial</button>*/}
-        <button onClick={goToLastPage}>Retorne a página anterior</button>
+        <h1>Formulário de inscrição</h1>
+        <button onClick={goToLastPage}>Retornar</button>
       </section>
     );
 }

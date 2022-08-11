@@ -9,15 +9,15 @@ export function LoginPage() {
       navigate("/")
     }
     const goToAdmin=() =>{
-      navigate("/Admin")
+      navigate("/admin")
     }
    
 
     return (
       <section>
-        <h1>PROJETO LABEX - LOGIN</h1> 
-        <button onClick={goToHome}>Página inicial</button>
-        <button onClick={goToAdmin}>Administração</button>
+        <h1>Login como administrador</h1> 
+        <button onClick={goToAdmin}>Entrar</button>
+         <button onClick={goToHome}>Sair</button>
 
       </section>
       

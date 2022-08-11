@@ -6,7 +6,7 @@ export function ListTripsPage() {
   const navigate = useNavigate()
 
   const goToForm = () => {
-    navigate("/Form")
+    navigate("/trips/application")
   }
   const goToHome = () => {
     navigate("/")
@@ -17,10 +17,10 @@ export function ListTripsPage() {
 
     return (
       <section>
-        <h1>LISTAS DE VIAGENS</h1> 
-        <button onClick={goToForm}>Formulário para Viagens</button>
+        <h1>Viagens e inscrição de novos candidatos</h1> 
+        <button onClick={goToForm}>Inscrição de usuários</button>
         <button onClick={goToHome}>Sair</button>
-        <button onClick={goToLastPage}>Retorne a página anterior</button>
+        <button onClick={goToLastPage}>Retornar</button>
       </section>
 
     );

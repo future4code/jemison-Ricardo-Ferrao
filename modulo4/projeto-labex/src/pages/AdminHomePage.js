@@ -5,11 +5,16 @@ export function AdminHomePage() {
   
   const navigate = useNavigate()
 
-  const goToDetal=() =>{
-    navigate("/Detal")
+  const goToListar=() =>{
+    navigate("/admin/trips/list")
   }
-  const goToCria=() =>{
-    navigate("/Cria")
+
+  const goToCriar=() =>{
+    navigate("/admin/trips/create")
+  }
+
+  const goToDet=() =>{
+    navigate("/admin/trips/:id")
   }
 
   const goToHome = () => {
@@ -21,11 +26,12 @@ export function AdminHomePage() {
 
     return (
       <section>
-        <h1>ADMINISTRAÇÃO</h1> 
-        <button onClick={goToCria}>Cria novas viagens</button> 
-        <button onClick={goToDetal}>Detalhes das viagens</button> 
+        <h1>Lista de viagens (criar/apagar/detalhes)</h1> 
+        <button onClick={goToListar}>Listar Viagens</button>
+        <button onClick={goToCriar}>Criar Viagens</button>
+        <button onClick={goToDet}>Ver detalhes</button>
+        <button onClick={goToLastPage}>Retornar</button>
         <button onClick={goToHome}>Sair</button>
-        <button onClick={goToLastPage}>Retorne a página anterior</button>
       </section>
     );
   }
