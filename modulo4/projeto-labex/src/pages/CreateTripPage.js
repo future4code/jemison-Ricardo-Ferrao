@@ -12,7 +12,7 @@ export function CreateTripPage() {
     return (
       <section>
         <h1>Formulário para o administrador criar uma nova viagem</h1> 
-        <button onClick={goToLastPage}>Retorne a página anterior</button>
+        <button onClick={goToLastPage}>Retornar</button>
       </section>
     );
 }

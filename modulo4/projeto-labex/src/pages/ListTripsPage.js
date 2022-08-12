@@ -19,8 +19,8 @@ export function ListTripsPage() {
       <section>
         <h1>Viagens e inscrição de novos candidatos</h1> 
         <button onClick={goToForm}>Inscrição de usuários</button>
-        <button onClick={goToHome}>Sair</button>
         <button onClick={goToLastPage}>Retornar</button>
+        <button onClick={goToHome}>Sair</button>
       </section>
 
     );

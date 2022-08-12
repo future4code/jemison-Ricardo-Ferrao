@@ -12,7 +12,7 @@ export function TripDetailsPage() {
     return (
       <section>
         <h1>Ver viagem  e candidatos</h1> 
-        <button onClick={goToLastPage}>Retorne a página anterior</button>
+        <button onClick={goToLastPage}>Retornar</button>
       </section>
     );
 }
