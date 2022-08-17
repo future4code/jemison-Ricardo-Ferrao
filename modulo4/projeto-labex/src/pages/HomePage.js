@@ -1,7 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import './../Styles/styleHomePage'
-
+import {Botoes, Principal, Titulo} from '../Styles/HomePageStyled'
+import useCapturarViagens from '../hook/useCapturarViagens';
 
 
 export function HomePage() {
@@ -17,13 +17,14 @@ export function HomePage() {
    
 
     return (
-      <section>
-        <h1>Labe X</h1>
-        <h3>Para o usuário escolher entre Área Administrativa e Lista de Viagens</h3> 
-        <button onClick={goToLista}>Lista de viagens</button>
-        <button onClick={goToLogin}>Área Administrativa</button>
-      </section>
-      
-      
-    );
+      <Principal>
+        <Titulo>Labe X</Titulo>
+          <p>Para o usuário escolher entre Área Administrativa e Lista de Viagens</p> 
+          <Botoes>
+            <button onClick={goToLista}>Lista de viagens</button>
+            <button onClick={goToLogin}>Área Administrativa</button>
+          </Botoes>
+
+      </Principal>
+    )
   }

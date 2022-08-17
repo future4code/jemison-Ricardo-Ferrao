@@ -1,9 +1,5 @@
-import React from 'react';
 import Router from './components/Router'
 import {GlobalStyle} from './GlobalStyle'
-
-
-
 
 function App() {
   return (
@@ -11,8 +7,6 @@ function App() {
       <GlobalStyle/>
       <Router />
     </div>
-
-
   );
 }
 
