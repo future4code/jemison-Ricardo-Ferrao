@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useProtectedPage } from '../../hooks/useProtectedPage';
 import {Botoes, Principal, Titulo} from '../HomePage/HomePageStyled'
 
 function AdminHomePage () {
+    useProtectedPage();
     const navigate = useNavigate();
     
     const voltar = () =>{
@@ -11,6 +13,7 @@ function AdminHomePage () {
 
     const inicio = () =>{
         navigate(-1)
+        localStorage.clear()
     }
 
     return(

@@ -2,34 +2,21 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import { Botoes, Principal, Titulo } from "../HomePage/HomePageStyled";
-import { Formulario } from "./ApplicationFormPageStyled";
-import axios from 'axios';
-import { URL } from "../../constants/Url";
+import { Formulario, InputContainer, InputStyled, SelectStyled } from "./ApplicationFormPageStyled";
+// import { URL } from "../../constants/Url";
 
 function ApplicationFormPage () {
     const navigate = useNavigate();
 
-    // const enviar = () =>{
-    //     alert('cadastrado')
-    // }
+    
 
     const voltar = () =>{
         navigate(-1)
     }
     
-    const headers = {
-        "content-type": "application/json",
-        "auth": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im93T2g5ZWo2bW50akZqNUNRMVB4IiwiZW1haWwiOiJhc3Ryb2RldkBnbWFpbC5jb20uYnIiLCJpYXQiOjE1ODk1NjI5MDh9.aB4dNbTCkToXB7pdzEa-tuMa-QbRQDUd93eva4-cec0"
-    }
     
-    const criarViagem = (e) => {
-        e.preventDefault();
-        axios.post(`${URL}:aluno/trips/:id/apply`, body, headers)
-        .then((response) =>{console.log(response.data)})
-        .catch((error) => {console.log(error)})
-    }
 
-    const [body, onChange] = useForm({name: "", planet: "", date:"", description: "", durationInDays: ""})
+    const [body, onChange] = useForm({name: "", age: "", profession: "", description: "", country: ""})
 
     return (
 
@@ -37,72 +24,85 @@ function ApplicationFormPage () {
             <Titulo>Se candidate para uma viagem</Titulo>
             <Formulario>
 
+                <SelectStyled>
+                    <select>
+                        <option selected>Escolha sua viagem</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </SelectStyled>
+               
+               <InputContainer>
+                    <label htmlFor="name">
+                        Nome:
+                        <InputStyled
+                            id="name"
+                            name="name"
+                            type="text" 
+                            value={body.name}
+                            onChange={onChange}
+                            pattern="(?=^.{5,60}$)^[A-Z][a-z]+(?:[ ][A-Z][a-z]+)*$" title="digite um nome válido"
+                            required
+                        />
+                    </label>
+                </InputContainer>
 
-                <label htmlFor="name">
-                    Nome:
-                    <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Nome"
-                        pattern="(?=^.{5,60}$)^[A-Z][a-z]+(?:[ ][A-Z][a-z]+)*$"
-                        value={body.name}
-                        onChange={onChange}
-                        required
-                    />
-                </label>
-
-                <select>
-                    <option value={body.planet}>Marte</option>
-                    <option value={body.planet}>Jupter</option>
-                    <option value={body.planet}>Saturno</option>
-                    <option value={body.planet}>Urano</option>
-                </select>
+                <InputContainer>
+                    <label htmlFor="age">
+                        Idade:
+                        <InputStyled
+                            id="age"
+                            name="age"
+                            value={body.age}
+                            onChange={onChange}
+                            required
+                        />
+                    </label>
+                </InputContainer>
                 
+                <InputContainer>
+                    <label htmlFor="profession">
+                        Profissão:
+                        <InputStyled
+                            id="profession"
+                            name="profession"
+                            type="text"
+                            value={body.profession}
+                            onChange={onChange}
 
-                <label htmlFor="date">
-                    Data de nascimento:
-                    <input
-                        id="date"
-                        name="date"
-                        type="date"
-                        placeholder="idade"
-                        pattern="^.{3,}"
-                        value={body.date}
-                        onChange={onChange}
-                    />
-                </label>
+                        />
+                    
+                    </label>
+                </InputContainer>
 
-                <label htmlFor="description">
-                    Descrição:
-                    <input
-                        id="description"
-                        name="description"
-                        type="text"
-                        placeholder="insira sua história"
-                        pattern="^.{3,}"
-                        value={body.description}
-                        onChange={onChange}
-                    />
-                </label>
+               
+                <InputContainer>
+                    <label htmlFor="description">
+                        Descrição:
+                        <InputStyled
+                            id="description"
+                            name="description"
+                            type="text"
+                            pattern="^.{3,}"
+                            value={body.description}
+                            onChange={onChange}
+                        />
+                    </label>
+                </InputContainer>
 
-                <label htmlFor="durationInDays">
-                    Duração da viagem:
-                    <input
-                        id="durationInDays"
-                        name="durationInDays"
-                        type="number"
-                        placeholder="50"
-                        pattern="^.{3,}"
-                        value={body.durationInDays}
-                        onChange={onChange}
-                    />
-                </label>
+                <SelectStyled> 
+                    <select>
+                        <option selected>Escolha um país</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+
+                </SelectStyled>
 
 
             <Botoes>
                 <button onClick={voltar}>voltar</button>
-                <button onClick={criarViagem}>enviar</button>
+                <button>enviar</button>
             </Botoes>
             </Formulario>
         </Principal>  

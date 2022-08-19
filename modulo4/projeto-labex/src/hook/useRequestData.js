@@ -1,26 +1,11 @@
-import {useEffect, useState} from 'react'
-import axios from 'axios'
+// import {useState, useEffect} from 'react';
+// import axios from 'axios';
 
 
-export function useRequestData(url) {
+// function useRequestData(url) {
+//     const [data, setData] = useState(undefined)
 
-    const[data,setData]= useState(undefined)
-    const [isLoading, setIsLoading] = useState (false)
-    const [error, setError] = useState("")
+//     const [isLoading, setIsLoading] = useState(false)
 
-
-    useEffect(() => {
-        setIsLoading(true)
-        axios.get(url)
-        .then((response)=>{
-        setIsLoading(false)
-        setData(response.data)
-        }).catch((error)=>{
-        setIsLoading(false)   
-        console.log(error)
-        setError(error)
-        })
-    },[url])
-
-    return [data, isLoading, error]
-}
+//     const [error, setError] = useState('')
+// }

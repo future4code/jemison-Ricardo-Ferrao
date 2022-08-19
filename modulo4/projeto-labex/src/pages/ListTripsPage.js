@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 import {useNavigate} from 'react-router-dom'
+import { Botoes, Principal, Titulo } from '../Styles/HomePageStyled'
 
 
 export function ListTripsPage() {
@@ -16,12 +17,15 @@ export function ListTripsPage() {
   }
 
     return (
-      <section>
-        <h1>Viagens e inscrição de novos candidatos</h1> 
-        <button onClick={goToForm}>Inscrição de usuários</button>
-        <button onClick={goToLastPage}>Retornar</button>
-        <button onClick={goToHome}>Sair</button>
-      </section>
+      <Principal>
+        <Titulo>Viagens e inscrição de novos candidatos</Titulo> 
+        <Botoes>
+          <button onClick={goToForm}>Inscrição de usuários</button>
+          <button onClick={goToLastPage}>Retornar</button>
+          <button onClick={goToHome}>Sair</button>
+        </Botoes>
+
+      </Principal>
 
     );
   }
