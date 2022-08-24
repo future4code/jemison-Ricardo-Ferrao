@@ -13,23 +13,27 @@ export const GlobalStyle= createGlobalStyle`
     --cinza3:#686868;
     --cinza4:#2e2e2e;
     --black:##000000;
-    --green: #18810e;
+    --green: #0a3007;
     --yellow: #ccbe00;
-    --red: #ff0000;
-    --Blue: #0469bb;
+    --red: #630404;
+    --blue: #00294b;
 }
 
 
 h1{
 
-  font-family: 'Rubik Dirt', cursiva;
-  color: var(--green);
+  font-family: 'Rubik', cursiva;
+  color: var(--black);
+  font-size: 10vw;
+  align-items: center;
+  justify-content: center;
 
 }
-h2, h3{
+
+h2, h3, h4{
 
   font-family: 'Rubik', cursive;
-  color: var(--yellow);
+  color: var(--cinza1);
 
 }
 body{

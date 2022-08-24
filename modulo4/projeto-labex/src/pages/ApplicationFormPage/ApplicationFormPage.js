@@ -1,10 +1,10 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
-import useForm from '../hook/useForm'
-import { Botoes, Principal, Titulo } from '../Styles/HomePageStyled'
-import { Formulario, InputContainer, InputStyled, SelectStyled } from '../Styles/ApplicationFormPageStyled'
+import useForm from '../../hook/useForm'
+import { Botoes, Principal } from './styles'
+import { Formulario } from '../../Styles/ApplicationFormPageStyled'
 import axios from 'axios';
-import { URL } from '../constants/Url'
+import { URL } from '../../constants/Url'
 
 
 
@@ -32,8 +32,8 @@ export function ApplicationFormPage() {
 
     return (
       <Principal>
-        <Titulo>Formulário de inscrição para Viagem</Titulo>
-          <Formulario>
+        <h2>Formulário de inscrição para Viagem</h2>
+          <Formulario >
             <label htmlFor="name">
               Nome:
               <input 

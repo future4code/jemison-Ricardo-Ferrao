@@ -1,11 +1,10 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import {Principal, Titulo, Botoes} from '../Styles/HomePageStyled'
-import {Formulario} from '../Styles/ApplicationFormPageStyled'
+import {Principal, Botoes, Formulario} from './styles'
 import axios from 'axios'
 //import { URL } from '../constants/Url'
 //import useProtectedPage from '../hook/useProtectedPage'
-import useForm from '../hook/useForm'
+import useForm from '../../hook/useForm'
 
 
 export function LoginPage() {
@@ -45,7 +44,7 @@ const [loginUser, onChange] = useForm ({email: "", password: ""});
 
   return (
     <Principal>
-      <Titulo>Login como administrador</Titulo> 
+      <h2>Login como administrador</h2> 
         <Formulario onSubmit={Logar}>
           <label htmlFor='email'>
             Email:
@@ -78,7 +77,7 @@ const [loginUser, onChange] = useForm ({email: "", password: ""});
           <Botoes>
             {/*<button onClick={goToAdmin}>Entrar</button>*/}
             <button onClick={goToHome}>Sair</button>
-            <button type="submit">entrar</button>
+            <button type={'submit'}>entrar</button>
             
           </Botoes>
         </Formulario>

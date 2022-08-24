@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
+import {Principal, Botoes} from './styles'
 
 export function CreateTripPage() {
     
@@ -10,10 +11,13 @@ export function CreateTripPage() {
   }
 
     return (
-      <section>
-        <h1>Formulário para o administrador criar uma nova viagem</h1> 
-        <button onClick={goToLastPage}>Retornar</button>
-      </section>
+      <Principal>
+        <h2>Criar uma nova viagem</h2> 
+        <Botoes>
+          <button onClick={goToLastPage}>Retornar</button>
+        </Botoes>
+        
+      </Principal>
     );
 }
 

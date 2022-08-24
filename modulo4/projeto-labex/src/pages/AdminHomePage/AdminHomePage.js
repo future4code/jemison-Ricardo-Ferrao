@@ -1,6 +1,6 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
-import {Botoes, Principal, Titulo} from '../Styles/HomePageStyled'
+import {Botoes, Principal} from './styles'
 
 
 export function AdminHomePage() {  
@@ -28,7 +28,7 @@ export function AdminHomePage() {
 
     return (
       <Principal>
-        <Titulo>Lista de viagens (criar/apagar/detalhes)</Titulo> 
+        <h2>Lista de viagens (criar/apagar/detalhes)</h2> 
         <Botoes>
           <button onClick={goToListar}>Listar Viagens</button>
           <button onClick={goToCriar}>Criar Viagens</button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
-import { Botoes, Principal, Titulo } from '../Styles/HomePageStyled'
+import { Botoes, Principal } from './styles'
 
 
 export function ListTripsPage() {
@@ -18,7 +18,8 @@ export function ListTripsPage() {
 
     return (
       <Principal>
-        <Titulo>Viagens e inscrição de novos candidatos</Titulo> 
+        <h2>Lista de viagens e </h2>
+        <h2>inscrição de novos candidatos</h2> 
         <Botoes>
           <button onClick={goToForm}>Inscrição de usuários</button>
           <button onClick={goToLastPage}>Retornar</button>
