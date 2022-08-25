@@ -1,11 +1,12 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
-import {Botoes, Principal} from './styles'
+import {Botoes, Principal} from '../../Style'
+import { useProtectedPage } from "../../hook/useProtectedPage"
 
 
 export function AdminHomePage() {  
-  
-  const navigate = useNavigate()
+  useProtectedPage()
+    const navigate = useNavigate()
 
   const goToListar=() =>{
     navigate("/admin/trips/list")

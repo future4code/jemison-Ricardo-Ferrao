@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+
 export const Principal = styled.div `
     background-color: #00774f;
     width: 100%;

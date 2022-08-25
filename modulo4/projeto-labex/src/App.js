@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from './components/Router'
-import {GlobalStyle} from './GlobalStyle'
+//import {GlobalStyle} from './GlobalStyle'
 
 
 
@@ -8,7 +8,6 @@ import {GlobalStyle} from './GlobalStyle'
 function App() {
   return (
     <div className="App">
-      <GlobalStyle/>
       <Router />
     </div>
 

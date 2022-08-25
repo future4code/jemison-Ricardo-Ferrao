@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Formulario = styled.form`
     display: flex;
     width: 40%;

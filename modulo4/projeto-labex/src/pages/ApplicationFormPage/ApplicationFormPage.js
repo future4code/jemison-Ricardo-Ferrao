@@ -1,9 +1,12 @@
-import React from 'react';
+import axios from 'axios'
+import React/*, {useEffect, useState}*/ from 'react';
 import {useNavigate} from 'react-router-dom'
+import { Formulario, /*InputContainer, InputStyled, SelectStyled*/ } from "../../Style"
+//import { ListCountries } from "../../constants/countries";
+//import { useRequestData } from "../../hook/useRequestData"
 import useForm from '../../hook/useForm'
-import { Botoes, Principal } from './styles'
-import { Formulario } from '../../Styles/ApplicationFormPageStyled'
-import axios from 'axios';
+import { Botoes, Principal } from '../../Style'
+
 import { URL } from '../../constants/Url'
 
 

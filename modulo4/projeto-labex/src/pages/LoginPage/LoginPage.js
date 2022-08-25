@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import {Principal, Botoes, Formulario} from './styles'
+import {Principal, Botoes, Formulario} from '../../Style'
 import axios from 'axios'
 //import { URL } from '../constants/Url'
 //import useProtectedPage from '../hook/useProtectedPage'
@@ -63,15 +63,15 @@ const [loginUser, onChange] = useForm ({email: "", password: ""});
           <label>
             Senha:
             <input 
-                id="password"
-                name="password"
-                type="password"
-                value={loginUser.password}
-                onChange={onChange}
-                placeholder="********"
-                pattern="^.{6,}" 
-                title='Minimo de 6 caracteres'
-                required
+              id="password"
+              name="password"
+              type="password"
+              value={loginUser.password}
+              onChange={onChange}
+              placeholder="********"
+              pattern="^.{6,}" 
+              title='Minimo de 6 caracteres'
+              required
             />
           </label>
           <Botoes>
