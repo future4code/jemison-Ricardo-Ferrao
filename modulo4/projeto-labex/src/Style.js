@@ -50,8 +50,6 @@ export const Formulario=styled.form`
         font-size: 15px;
         text-align: right;
         font-weight: bold;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
     }
     input{
         font-family: Arial;
@@ -96,11 +94,12 @@ export const MyHeader=styled.header`
 export const ListContainer = styled.div `
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-color: #b8d7f0;
+    width: 300px;
+    border: 1px solid #2400c4;
+    height: 100px;
+    overflow-y: scroll
 `
-
-{/* --------------------------------------------------*/}
-
 
 export const InputStyled = styled.input`
     display: flex;
@@ -125,7 +124,7 @@ export const SelectStyled = styled.div`
 
     select:hover{
         cursor: pointer;
-        background-color: darkgray;
+        background-color: #b8d7f0;
     }
 `
 
@@ -133,11 +132,12 @@ export const InputContainer = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 600px;
     height: 100px;
     margin:5px;
 
     input:hover{
         border: 1px solid red;
     }
+
 `

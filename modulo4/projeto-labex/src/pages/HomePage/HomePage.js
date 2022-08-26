@@ -1,6 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import {Principal, Botoes} from '../../Style'
+import {Principal, Botoes} from '../../Styles/Style'
 
 
 export function HomePage() {

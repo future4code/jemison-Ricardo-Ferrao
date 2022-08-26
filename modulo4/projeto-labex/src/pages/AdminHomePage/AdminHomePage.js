@@ -1,6 +1,6 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
-import {Botoes, Principal} from '../../Style'
+import {Botoes, Principal} from '../../Styles/Style'
 import { useProtectedPage } from "../../hook/useProtectedPage"
 
 

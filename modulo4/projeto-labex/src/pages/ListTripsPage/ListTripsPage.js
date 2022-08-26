@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
-import { Botoes, Principal, ListContainer } from '../../Style'
+import { Botoes, Principal, ListContainer } from '../../Styles/Style'
 import { useRequestData } from '../../hook/useRequestData'
 import { URL } from '../../constants/Url'
 

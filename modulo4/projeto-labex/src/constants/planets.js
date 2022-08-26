@@ -1,4 +1,4 @@
-export const planets = [
+const Planets = [
     "Mercúrio",
     "Vênus",
     "Terra",
@@ -9,3 +9,7 @@ export const planets = [
     "Netuno",
     "Plutão"
 ]
+
+export const ListPlanets = Planets.map((planet, index) => {
+    return <option key={index}>{planet}</option>
+})

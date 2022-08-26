@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React/*, {useEffect, useState}*/ from 'react';
 import {useNavigate} from 'react-router-dom'
-import { Formulario, /*InputContainer, InputStyled, SelectStyled*/ } from "../../Style"
-//import { ListCountries } from "../../constants/countries";
+import { Formulario, /*InputContainer, InputStyled, SelectStyled*/ } from "../../Styles/Style"
+import { ListCountries } from "../../constants/countries";
 //import { useRequestData } from "../../hook/useRequestData"
 import useForm from '../../hook/useForm'
 import { Botoes, Principal } from '../../Style'
@@ -19,6 +19,40 @@ export function ApplicationFormPage() {
     navigate(-1)
   }
 
+ // const [tripsS] = useRequestData(`${URL}/trips`)
+    
+
+  const [form, onChange] = useForm({
+      name: "",
+      age: Number(null),
+      applicationText: "",
+      profession: "",
+      country: "",
+  })
+
+  const registerTrip = (e) =>{
+      e.preventDefault();
+      const body = {
+          name: form.name,
+          age: form.age,
+          applicationText: form.applicationText,
+          profession: form.profession,
+          country: form.country
+      }
+
+      const headers = {
+          "content-type": "application/json"
+      }
+
+      axios.post(`${URL}/trips/
+      NoIFVcOiSgTKTIPVZwXS/apply`, body, headers)
+      .then((response) => { alert("Viagem cadastrada!")})
+      .catch((error) => {console.log(error)})
+  }
+
+
+
+/*
   const headers = {
     "content-type": "application/json",
     "auth": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im93T2g5ZWo2bW50akZqNUNRMVB4IiwiZW1haWwiOiJhc3Ryb2RldkBnbWFpbC5jb20uYnIiLCJpYXQiOjE1ODk1NjI5MDh9.aB4dNbTCkToXB7pdzEa-tuMa-QbRQDUd93eva4-cec0"
@@ -32,11 +66,12 @@ export function ApplicationFormPage() {
   }
 
   const [body, onChange] = useForm({name: "", planet: "", date:"", description: "", durationInDays: ""})
+*/
 
     return (
       <Principal>
         <h2>Formulário de inscrição para Viagem</h2>
-          <Formulario >
+          <Formulario>
             <label htmlFor="name">
               Nome:
               <input 
@@ -45,19 +80,25 @@ export function ApplicationFormPage() {
                 type="text"
                 placeholder="Nome"
                 pattern="(?=^.{5,60}$)^[A-Z][a-z]+(?:[ ][A-Z][a-z]+)*$"
-                value={body.name}
+                value={form.name}
                 onChange={onChange}
                 required
               />
             </label>
 
-            <select>
-              <option value={body.planet}>Marte</option>
-              <option value={body.planet}>Jupter</option>
-              <option value={body.planet}>Saturno</option>
-              <option value={body.planet}>Urano</option>
-            </select>
-
+            <label htmlFor="age">
+              Idade:
+              <input
+                  id="age"
+                  placeholder="Idade"
+                  name="age"
+                  type="number"
+                  value={form.age}
+                  onChange={onChange}
+                  required
+              />
+            </label>
+{/*
             <label htmlFor="date">
               Data de nascimento:
               <input
@@ -66,24 +107,25 @@ export function ApplicationFormPage() {
                 type="date"
                 placeholder="idade"
                 pattern="^.{3,}"
-                value={body.date}
+                value={form.date}
                 onChange={onChange}
               />
             </label>
-
+*/}
             <label htmlFor="description">
               Descrição:
               <input
                 id="description"
                 name="description"
                 type="text"
-                placeholder="insira sua história"
-                pattern="^.{3,}"
-                value={body.description}
+                placeholder="Texto do Candidato"
+                pattern="^.{30,}"
+                value={form.description}
                 onChange={onChange}
+                required
               />
             </label>
-
+{/*}
             <label htmlFor="durationInDays">
               Duração da viagem:
               <input
@@ -96,12 +138,31 @@ export function ApplicationFormPage() {
                 onChange={onChange}
               />
             </label>
+*/}
+            <label htmlFor="profession">
+              Profissão:
+              <input
+                  id="profession"
+                  placeholder="Profissão"
+                  name="profession"
+                  type="text"
+                  value={form.profession}
+                  onChange={onChange}
+                  pattern="^.{10,}"
+                  title="minimum of 10 characters"
+                  required
+              />
+              </label>
+            
+            <select name="country" onChange={onChange}>
+              {ListCountries}
+            </select>
 
             <Botoes>
               <button onClick={goToLastPage}>Retornar</button>
-              <button onClick={criarViagem}>enviar</button>
+              <button type="submit" onClick={registerTrip}>Enviar</button>
             </Botoes>
-          </Formulario>
+        </Formulario>
       </Principal>
     )
 }

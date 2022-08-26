@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import {Principal, Botoes, Formulario} from '../../Style'
+import {Principal, Botoes, Formulario} from '../../Styles/Style'
 import axios from 'axios'
 //import { URL } from '../constants/Url'
 //import useProtectedPage from '../hook/useProtectedPage'
