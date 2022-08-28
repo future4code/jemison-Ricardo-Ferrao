@@ -1,12 +1,11 @@
 import axios from 'axios'
-import React/*, {useEffect, useState}*/ from 'react';
+import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import { Formulario, /*InputContainer, InputStyled, SelectStyled*/ } from "../../Styles/Style"
-import { ListCountries } from "../../constants/countries";
+import { Formulario } from "../../Styles/Style"
+import { ListCountries } from "../../constants/countries"
 //import { useRequestData } from "../../hook/useRequestData"
 import useForm from '../../hook/useForm'
 import { Botoes, Principal } from '../../Style'
-
 import { URL } from '../../constants/Url'
 
 
@@ -19,7 +18,7 @@ export function ApplicationFormPage() {
     navigate(-1)
   }
 
- // const [tripsS] = useRequestData(`${URL}/trips`)
+ //const [tripsS] = useRequestData(`${URL}/trips`)
     
 
   const [form, onChange] = useForm({
@@ -50,28 +49,11 @@ export function ApplicationFormPage() {
       .catch((error) => {console.log(error)})
   }
 
-
-
-/*
-  const headers = {
-    "content-type": "application/json",
-    "auth": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im93T2g5ZWo2bW50akZqNUNRMVB4IiwiZW1haWwiOiJhc3Ryb2RldkBnbWFpbC5jb20uYnIiLCJpYXQiOjE1ODk1NjI5MDh9.aB4dNbTCkToXB7pdzEa-tuMa-QbRQDUd93eva4-cec0"
-  }
-
-  const criarViagem = (e) => {
-    e.preventDefault();
-    axios.post(`${URL}:aluno/trips/:id/apply`, body, headers)
-    .then((response) =>{console.log(response.data)})
-    .catch((error) => {console.log(error)})
-  }
-
-  const [body, onChange] = useForm({name: "", planet: "", date:"", description: "", durationInDays: ""})
-*/
-
     return (
       <Principal>
         <h2>Formulário de inscrição para Viagem</h2>
-          <Formulario>
+          <Formulario onSubmit={registerTrip}>
+            
             <label htmlFor="name">
               Nome:
               <input 
@@ -98,20 +80,7 @@ export function ApplicationFormPage() {
                   required
               />
             </label>
-{/*
-            <label htmlFor="date">
-              Data de nascimento:
-              <input
-                id="date"
-                name="date"
-                type="date"
-                placeholder="idade"
-                pattern="^.{3,}"
-                value={form.date}
-                onChange={onChange}
-              />
-            </label>
-*/}
+
             <label htmlFor="description">
               Descrição:
               <input
@@ -119,26 +88,14 @@ export function ApplicationFormPage() {
                 name="description"
                 type="text"
                 placeholder="Texto do Candidato"
-                pattern="^.{30,}"
+                pattern="^.{20,}"
+                title="utilize no minimum 20 caracteres"
                 value={form.description}
                 onChange={onChange}
                 required
               />
             </label>
-{/*}
-            <label htmlFor="durationInDays">
-              Duração da viagem:
-              <input
-                id="durationInDays"
-                name="durationInDays"
-                type="number"
-                placeholder="50"
-                pattern="^.{3,}"
-                value={body.durationInDays}
-                onChange={onChange}
-              />
-            </label>
-*/}
+
             <label htmlFor="profession">
               Profissão:
               <input
@@ -149,7 +106,7 @@ export function ApplicationFormPage() {
                   value={form.profession}
                   onChange={onChange}
                   pattern="^.{10,}"
-                  title="minimum of 10 characters"
+                  title="utilize no minimum 10 caracteres"
                   required
               />
               </label>
@@ -160,7 +117,7 @@ export function ApplicationFormPage() {
 
             <Botoes>
               <button onClick={goToLastPage}>Retornar</button>
-              <button type="submit" onClick={registerTrip}>Enviar</button>
+              <button type="submit">Enviar</button>
             </Botoes>
         </Formulario>
       </Principal>

@@ -1,8 +1,10 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
 import {Principal, Botoes} from '../../Styles/Style'
+import { useProtectedPage } from '../../hook/useProtectedPage'
 
 export function TripDetailsPage() {
+  useProtectedPage()
     
   const navigate = useNavigate()
 
