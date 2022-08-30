@@ -1,0 +1,52 @@
+
+[
+    {
+    "id": "0",
+    "name": "Sol"
+    },
+   
+    {
+    "id": "1",
+    "name": "Mercúrio"
+    },
+    
+    {
+    "id": "2",
+    "name": "Vênus"
+    },
+
+    {
+    "id": "3",
+    "name": "Terra"
+    },
+    
+    {
+    "id": "4",
+    "name": "Marte"
+    },
+  
+    {
+    "id": "5",
+    "name": "Júpiter"
+    },
+
+    {
+    "id": "6",
+    "name": "Saturno"
+    },
+
+    {
+    "id": "7",
+    "name": "Urano"
+    },
+ 
+    {
+    "id": "8",
+    "name": "Netuno"
+    },
+ 
+    {
+    "id": "9",
+    "name": "Plutão"
+    }
+]
