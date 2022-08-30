@@ -1,3 +1,7 @@
-export const goToProductsScreen = (navigate) => {navigate("/")};
+export const goToHomePage  = (navigate) => {navigate("/")}
 
-export const goToCartScreen = (navigate) => {navigate("/cart")};
+export const goToPokedexPage = (navigate) => {navigate("/PokedexPage")}
+
+export const goToDetalhesPage = (navigate) => {navigate("/PokedexPage/DetalhesPage")}
+
+
