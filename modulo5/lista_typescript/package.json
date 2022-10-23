@@ -11,8 +11,11 @@
     "exercicio3": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio3",
     "exercicio4": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio4",
     "exercicio5": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio5",
-    "exercicio6": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio6"
-  },
+    "exercicio6": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio6",
+    "exercicio7": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio7",
+    "exercicio8": "echo Transpilando... && tsc && echo Rodando... && node ./build/exercicio8"
+
+    },
   "keywords": [],
   "author": "Ricardo Ferrão",
   "license": "ISC",
