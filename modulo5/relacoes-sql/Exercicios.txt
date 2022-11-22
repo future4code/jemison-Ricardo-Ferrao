@@ -1,0 +1,30 @@
+*** Exercicio 1
+a) Chave estrageira é uma referência em uma tabela a uma chave primária de outra tabela.
+
+c) 
+
+d) ALTER TABLE Movies DROP COLUMN rating
+
+e) Não podemos apagar pq o id é de outra tabela e a hierarquia não permite
+
+*** Exercicio 2
+
+a) Tabela com colunas para id do filme e id do ator. Essas ids serão trazidas de outras tabelas como chave estrangeira.
+
+b) INSERT INTO MovieCast(movie_id, actor_id)
+	VALUES	("001", "004"),
+		("003", "007");
+		("001", "003"),
+		("001", "005"),
+		("002", "001"),
+		("002", "002"),		
+
+c) O registro não poderá ser relacionado pq os ids não existem
+
+d) 
+
+*** Exercicio 3
+
+
+
+
